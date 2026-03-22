@@ -37,6 +37,8 @@ Para desactivar el entorno virtual.
 ```bash
 deactivate
 ```
+![alt text](<imagenes/instalacion python , creacion entorno virtual.png>)
+![alt text](<imagenes/instalar requirements.png>)
 
 ## Cómo ejecutar los tests
 
@@ -52,3 +54,31 @@ python3 -m unittest tests/*.py
 Este comando ejecutará todos los tests que se encuentren en la carpeta `tests`.
 
 [1]: https://flask.palletsprojects.com/en/stable/
+
+![alt text](<imagenes/realizar test.png>)
+
+## pasos de CICD 
+
+### TOKENS de DOCKER 
+![alt text](<imagenes/token docker.png>)
+
+### Git Hub secrets 
+![alt text](<imagenes/actions seccrets creacion de github.png>)
+hemos tenido que modificar .yaml para poner un nuevo secret mas para AWS , AWS_SESSION_TOKEN
+
+### creacion repositorio ERC 
+![alt text](<imagenes/creacion repositorio ERC.png>)
+
+### APP RUNNER 
+![alt text](<imagenes/app runner 1.png>)
+hay un fallo por culpa de AWS , no me deja poner un nombre de rol de servicio 
+ahi iria LabRole , es fallo de AWS no puedo hacer nada para arreglarlo 
+
+### Realizar push ´
+![alt text](imagenes/image.png)
+
+### Mostrar Git hub actions del repositorio 
+![alt text](<imagenes/git hub action 1.png>)
+me sale que ha fallado para AWS 
+![alt text](<imagenes/git hub action 2.png>)
+el error es debido a AWS Runner , pero se ha automatizado el proceso correctamente
